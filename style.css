@@ -1,0 +1,171 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #d8dee7 !important;
+  overflow-x: hidden;
+}
+
+section {
+  border-radius: 20px;
+}
+
+.card.start {
+  background-color: #3c37ff ;
+  border-radius: 15px;
+}
+
+/* Radio Button */
+
+.radio_btn {
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    width: max-content;
+    flex-basis: 44%;
+}
+
+.radio_btn input {
+    opacity: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.radio_btn input:checked+.circle_border {
+    color: #3c37ff;
+    accent-color: #3c37ff;
+    background-color: #3e37ff18;
+}
+
+.radio_btn .circle_border {
+    display: flex;
+    align-items: center;
+    z-index: 0;
+    padding: 17px 17px;
+    gap: 10px;
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    border: 3px solid #3c37ff;
+}
+
+.radio_btn .circle {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    border: 1px solid #3c37ff;
+    position: relative;
+}
+
+.radio_btn .circle::after {
+    content: "";
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    background-color: #3c37ff;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* Radio Button */
+
+.login button {
+  font-size: 14px ;
+  background-color: #3c37ff ;
+  color: white ;
+}
+
+.testimonial {
+  background-color: #2520e3 !important;
+  border-radius: 15px !important;
+  font-size: 12px;
+  margin-top: 100px;
+}
+
+.testimonial img {
+  border-radius: 10px;
+  width: 55%;
+}
+
+.testimonial_client h6,
+.testimonial_client p {
+  font-size: 11px;
+  padding: 0 140px 0 0;
+  font-weight: bold;
+}
+
+.testimonial_client p {
+  font-weight: 100;
+}
+
+.link_card.card{
+  top: -60px;
+  right: -55px;
+  border: 3px solid white;
+  border-radius: 20px;
+  width: 50%;
+  box-shadow: 0px 16px 50px 10px rgba(0, 0, 0, 0.265);
+  background-color: #0A0A0A;
+}
+
+.link_card img {
+  border-radius: 15px;
+}
+
+.link_card_form{
+    background-color: #262931;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.link_card_input{
+    flex: 4;
+}
+
+.link_card_input input{
+    background: transparent;
+    border-color: transparent;
+    color: white;
+}
+
+.link_card_input input:active,
+.link_card_input input:focus{
+    outline: none;
+    border: none;
+    padding: 0 10px;
+}
+
+.link_card_btn{
+    flex: 2;
+    padding: 0 0 0 40px;
+}
+
+.link_card_btn button{
+    border-radius: 5px;
+    background-color: #3c37ff;
+    color: white;
+    border: none;
+    padding: 10px;
+}
+
+.login_card{
+  bottom: -150px;
+  right: -70px;
+  border: 4px solid black !important;
+  border-radius: 20px !important;
+  box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.349);
+}
+
+.login_tags button{
+    background-color: #F3F6FE;
+    color: black;
+}
